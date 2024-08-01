@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:beige;
+}
+
+.father{
+    background: cornsilk;
+    position: fixed;
+}
+
+.father::after{
+    content: "";
+    clear: both;
+    display: block;
+  
+    /* 浏览器兼容 */
+    visibility: hidden;
+}
+
+.son{
+    background: burlywood;
+    height: 100px;
+    border: solid 1px black;
+    width: 500px;
+    top: 100px;
+    float: left;
+}
