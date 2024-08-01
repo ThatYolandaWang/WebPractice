@@ -1,0 +1,174 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    box-sizing: border-box;
+
+}
+
+/* 头部 */
+.title{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgb(95,192,205);
+    z-index: 1;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btnFindOwner{
+    width: 55px;
+    height: 30px;
+    margin: 15px 0px 15px auto;
+    background: rgba(0, 0, 0, .2);
+    color: white;
+    border-radius: 5px 0 0 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+.btnFindEmployee{
+    width: 55px;
+    height: 30px;
+    margin: 15px auto 15px 0px;
+    background: white;
+    color: rgb(95,192,205);
+    border-radius: 5px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+}
+
+.btnFindOwner:hover,.btnFindEmployee:hover{
+    background: grey;
+}
+
+.imgLocation{
+    width: 30px;
+    position: absolute;
+    right: 15px;
+    cursor: pointer;
+}
+
+
+/* 中间正文 */
+.content{
+    position: absolute;
+    top: 60px;
+    width: 100%;
+
+    padding-bottom: 50px;
+}
+
+.menu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menuitem{
+    width: 33.33%;
+    text-align: center;
+    cursor: pointer;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #ccc;
+    background: white;
+}
+
+.menuitem:hover{
+    background: gainsboro;
+}
+
+.menucontent{
+    display: none;
+    text-align: center;
+    position: absolute;
+    top: 28px;
+    background: gainsboro;
+    width: 33.33%;
+    z-index: 1;
+}
+
+.menuitem:hover .menucontent{
+    display: block;
+}
+
+ul{
+    list-style: none;
+}
+
+li:hover{
+    background:#ccc;
+}
+
+.item{
+    border-bottom: solid 1px gainsboro;
+    color: #ccc;
+    display: flex;
+}
+
+.itemleft{
+    width: 70%;
+    display: grid;
+    grid-template-columns: 50px 200px;
+
+    color: #ccc;
+}
+
+.wrappericon{
+    width: 18px;
+}
+
+.wrapperitem{
+    margin: 5px 15px 5px 15px;
+}
+
+
+.itemright{
+    position: relative;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    padding-right: 15px;
+}
+
+/* 尾部 */
+
+.bottom{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    padding: 15px;
+}
+
+.btnHome{
+    background: url("home.png") center center/cover no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.btnEdit{
+    background: url("edit.png") center center/cover no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+}
+
+.btnMine{
+    background: url("mine.png") center center/cover no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+}

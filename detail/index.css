@@ -12,7 +12,7 @@
     width: 100%;
     
     background: rgb(95,192,205);
-
+    z-index: 1;
 }
 
 
@@ -36,6 +36,8 @@
     top: 49px;
     display: flex;
     flex-direction: column;
+
+    padding-bottom: 50px;
 }
 
 .basicinfo{
@@ -86,7 +88,7 @@
     padding-right: 15px;
     border-right: 1.5px solid gainsboro;
     width: 60px;
-    position: fixed;
+    position: absolute;
 }
 
 .itemContent{
